@@ -23,11 +23,11 @@ class MVMainView: NSView {
     super.draw(dirtyRect)
     
     let windowHasFocus = self.window?.isKeyWindow ?? false
-    var topColor = NSColor(srgbRed: 0.949, green: 0.9451, blue: 0.949, alpha: 1.0)
-    var bottomColor = NSColor(srgbRed: 0.8392, green: 0.8314, blue: 0.8392, alpha: 1.0)
+    var topColor = NSColor(srgbRed: 0.333, green: 0.333, blue: 0.333, alpha: 1.0)
+    var bottomColor = NSColor(srgbRed: 0, green: 0, blue: 0, alpha: 1.0)
     if !windowHasFocus {
-      topColor = NSColor(srgbRed: 0.9647, green: 0.9647, blue: 0.9647, alpha: 1.0)
-      bottomColor = NSColor(srgbRed: 0.9647, green: 0.9647, blue: 0.9647, alpha: 1.0)
+      topColor = NSColor(srgbRed: 0.300, green: 0.300, blue: 0.300, alpha: 1.0)
+      bottomColor = NSColor(srgbRed: 0, green: 0, blue: 0, alpha: 1.0)
     }
     
     let gradient = NSGradient(colors: [topColor, bottomColor])
